@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url("./images/pattern-background-desktop.svg");
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  overflow: hidden;
+}
+.container {
+  background-color: white;
+  border-radius: 10px;
+  height: 80%;
+  width: 25%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.container #hero-music {
+  height: 35%;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 10px;
+}
+.container h2 {
+  color: hsl(223, 47%, 23%);
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 25px;
+  text-shadow: 1px 1px 1px hsl(223, 72%, 66%), -1px 1px 1px hsl(223, 82%, 69%);
+}
+.container p {
+  padding: 10px 50px 10px 50px;
+  color: hsl(223, 12%, 43%);
+}
+.annual-plan-container {
+  background-color: hsl(210, 38%, 95%);
+  margin: 1px 38px 10px 38px;
+  font-size: 20px;
+  color: hsl(223, 47%, 23%);
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+}
+.annual-plan {
+  color: hsl(223, 47%, 23%);
+  font-weight: 700;
+}
+.annual-container {
+  display: flex;
+  flex-direction: column;
+}
+.annual-plan-container::before {
+  content: url(./images/icon-music.svg);
+  position: relative;
+  left: -10;
+}
+.money {
+  font-size: 15px;
+}
+.change {
+  color: hsl(245, 75%, 52%);
+  align-self: center;
+  margin-left: 10px;
+  font-size: 18px;
+  text-decoration: underline;
+  font-weight: 500;
+}
+.payment {
+  margin: 20px auto 20px auto;
+  display: block;
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+  background-color: hsl(245, 75%, 52%);
+  border: none;
+  border-radius: 7px;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px hsl(223, 48%, 88%), -1px 1px 1px hsl(0, 0%, 100%);
+  box-shadow: hsl(245, 53%, 68%) 0px 5px;
+  width: 80%;
+  letter-spacing: 3px;
+}
+.cancel {
+  background: none;
+  color: hsl(245, 16%, 32%);
+  text-decoration: underline;
+  border: none;
+  display: block;
+  margin: 8px auto 8px auto;
+  font-size: 15px;
+}
+@media only screen and (max-width: 667px) {
+  .container {
+    width: 80%;
+  }
+  .container h2 {
+    font-size: 20px;
+  }
+  .container p {
+    padding: 1px 10px 1px 10px;
+  }
+  .annual-plan-container {
+    font-size: 15px;
+  }
+}
+
+/*@media only screen and (min-width: 613px) {
+  .container {
+    width: 85%;
+    height: 90%;
+  }
+}*/
+@media only screen and (min-height: 750px) and (max-height: 1000px) and (min-width: 320px) and (max-width: 540px) {
+  .container {
+    width: 80%;
+  }
+  .container h2 {
+    font-size: 25px;
+  }
+  .container p {
+    padding: 1px 50px 1px 50px;
+  }
+  .annual-plan-container {
+    font-size: 15px;
+  }
+  .cancel {
+    margin: 40px auto;
+  }
+  .payment {
+    margin: 50px auto;
+  }
+}
+@media only screen and (min-height: 720px) and (max-height: 750px) and (min-width: 320px) and (max-width: 540px) {
+  .container {
+    width: 60%;
+  }
+  .container h2 {
+    font-size: 25px;
+  }
+  .container p {
+    padding: 1px 30px 1px 30px;
+  }
+  .annual-plan-container {
+    font-size: 15px;
+  }
+  .cancel {
+    margin: 20px auto;
+  }
+  .payment {
+    margin: 20px auto;
+  }
+  .annual-plan-container {
+    margin: 10px 10px 10px 10px;
+  }
+}
